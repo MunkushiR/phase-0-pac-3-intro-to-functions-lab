@@ -1,18 +1,36 @@
 require ( './root.js' );
 
-
+function shout(string ) {
+  return string;
+}
+"Hello!".toLocaleUpperCase(); //'Hello'
+function shout(string) {
+  return string.toUpperCase();
+}
 describe('shout(string)', function() {
   it('receives one argument and returns it in all caps', function() {
     expect(shout('hello')).toEqual('HELLO');
   })
 })
-
+function whisper(string ) {
+  return string;
+}
+"Hello!".toLocaleUpperCase(); //'Hello'
+function whisper(string) {
+  return string.toUpperCase();
+}
 describe('whisper(string)', function() {
   it('receives one argument and returns it in all lowercase', function() {
     expect(whisper('HELLO')).toEqual('hello');
   })
 })
-
+function Logshout(string ) {
+  return string;
+}
+"Hello!".toLocaleUpperCase(); //'Hello'
+function Logshout(string) {
+  return string.toUpperCase();
+}
 describe('logShout(string)', function() {
   it('takes a string argument and logs it in all caps using console.log()', function() {
     const spy = expect.spyOn(console, 'log').andCallThrough();
@@ -24,6 +42,12 @@ describe('logShout(string)', function() {
     console.log.restore();
   })
 })
+function logWhisper(string ) {
+  return string;
+}
+"Hello!".toLocaleUpperCase(); //'Hello'
+function logWhisper(string) {
+  return string.toUpperCase();
 
 describe('logWhisper(string)', function() {
   it('takes a string argument and logs it in all lowercase using console.log()', function() {
